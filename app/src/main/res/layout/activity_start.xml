@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:background="@drawable/backimg"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".StartActivity">
+
+
+
+    <TableLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="30dp">
+
+        <TableRow>
+
+            <ImageView
+                android:layout_width="20dp"
+                android:layout_height="20dp"
+                android:contentDescription="@string/image"
+                android:src="@drawable/pink" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:paddingEnd="10dp"
+                android:paddingStart="10dp"
+                android:text="@string/pink_point"
+                android:textSize="18sp" />
+        </TableRow>
+
+        <TableRow
+            android:layout_gravity="center_vertical"
+            android:layout_marginTop="1dp">
+
+            <ImageView
+                android:layout_width="20dp"
+                android:layout_height="20dp"
+                android:contentDescription="@string/image"
+                android:src="@drawable/orange" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:paddingEnd="10dp"
+                android:paddingStart="10dp"
+                android:text="@string/orange_point"
+                android:textSize="18sp" />
+        </TableRow>
+
+        <TableRow
+            android:layout_gravity="center_vertical"
+            android:layout_marginTop="1dp">
+
+            <ImageView
+                android:layout_width="20dp"
+                android:layout_height="20dp"
+                android:contentDescription=""
+                android:src="@drawable/black" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:paddingEnd="10dp"
+                android:paddingStart="10dp"
+                android:text="@string/game_over"
+                android:textSize="18sp" />
+
+        </TableRow>
+    </TableLayout>
+
+    <ImageButton
+        android:id="@+id/start_button"
+        android:onClick="startButton"
+        android:layout_width="155dp"
+        android:layout_height="60dp"
+        android:contentDescription="@string/start_button"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="330dp"
+        app:srcCompat="@drawable/btn" />
+
+
+</LinearLayout>
