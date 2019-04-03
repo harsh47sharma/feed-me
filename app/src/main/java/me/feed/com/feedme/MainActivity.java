@@ -333,7 +333,9 @@ public class MainActivity extends AppCompatActivity {
 
     @Override
     public void onBackPressed() {
-        AlertDialog.Builder builder = new AlertDialog.Builder(this);
+
+        MainActivity.this.finish();
+        /*AlertDialog.Builder builder = new AlertDialog.Builder(this);
         builder.setMessage("This Game seems to be hard for you, want to quit?")
                 .setCancelable(false)
                 .setTitle("Quit Game")
@@ -348,7 +350,7 @@ public class MainActivity extends AppCompatActivity {
                     }
                 });
         AlertDialog alert = builder.create();
-        alert.show();
+        alert.show();*/
 
     }
 
@@ -780,31 +782,31 @@ public class MainActivity extends AppCompatActivity {
         }
 
         if (mScore  >= 141 && mScore <= 150){
-            mBoxY +=40;
+            mBoxY +=39;
 
 
         }
 
         if (mScore  >= 151 && mScore <= 190){
-            mBoxY +=43;
+            mBoxY +=41;
 
 
         }
 
         if (mScore  >= 191 && mScore <= 250){
-            mBoxY +=47;
+            mBoxY +=43;
 
 
         }
 
         if (mScore  >= 251 && mScore <= 330){
-            mBoxY +=50;
+            mBoxY +=47;
 
 
         }
 
         if (mScore  >= 331 && mScore <= 360){
-            mBoxY +=53;
+            mBoxY +=50;
 
 
         }
